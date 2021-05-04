@@ -22,5 +22,5 @@ describe('Paint Can', function () {
         paint_can.empty();
         const actual = paint_can.checkEmpty();
         assert.strictEqual(actual, true);
-    })
+    });
 })
