@@ -2,11 +2,11 @@ const Room = require('../models/room');
 
 const Decorator = function (paint_stock) {
     this.paint_stock = [];
-}
+};
 
 Decorator.prototype.addPaintCan = function (paint_can) {
     this.paint_stock.push(paint_can)
-}
+};
 
 Decorator.prototype.totalPaint = function () {
     let total = 0;
@@ -31,7 +31,7 @@ Decorator.prototype.paintRoom = function (room) {
         room.paintRoom();
     } else {
         console.log('Not enough paint...');
-    }
-}
+    };
+};
 
 module.exports = Decorator;
