@@ -9,7 +9,7 @@ describe('Paint Can', function () {
     });
 
     it('should have paint in can', function() {
-        const actual = paint_can.paint_volume();
+        const actual = paint_can.paint_volume;
         assert.strictEqual(actual, 12);
-    })
+    });
 })
