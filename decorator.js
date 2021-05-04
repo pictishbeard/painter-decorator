@@ -25,4 +25,13 @@ Decorator.prototype.checkAbleToPaintRoom = function (room) {
     };
 };
 
+Decorator.prototype.paintRoom = function (room) {
+    roomCheck = this.checkAbleToPaintRoom(room)
+    if (roomCheck === true) {
+        room.paintRoom();
+    } else {
+        console.log('Not enough paint...');
+    }
+}
+
 module.exports = Decorator;

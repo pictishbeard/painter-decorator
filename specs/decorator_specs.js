@@ -38,4 +38,11 @@ describe('Dectorator', function() {
         const actual = decorator.checkAbleToPaintRoom(room);
         assert.deepStrictEqual(actual, true);
     });
+
+    it('will paint a room if there is enough paint', function () {
+        decorator.addPaintCan(paint_can);
+        decorator.paintRoom(room);
+        const actual = room.painted;
+        assert.deepStrictEqual(actual, true);
+    });
 });
